@@ -22,79 +22,105 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="mb-24">
+    <div
+      id="modalWrap"
+      class="hidden w-full h-screen fixed backdrop-brightness-50 backdrop-blur-sm top-0 flex items-center justify-center"
+    >
+      <div
+        id="modal"
+        class="relative z-50 w-[850px] h-[500px] bg-white rounded-xl flex justify-evenly items-center"
+      >
+        <span
+          id="loaderModal"
+          class="hidden loading loading-ring text-error w-[200px] mx-auto block"
+        ></span>
+        <!-- <i
+          class="fa-solid fa-xmark absolute -top-3 -right-3 bg-red-500 text-white h-10 w-10 flex items-center justify-center rounded-full cursor-pointer"
+        ></i>
+        <div class="w-[90%] mx-auto flex gap-6">
+          <div class="border rounded-3xl border-red-400 bg-red-100 p-6">
+            <p class="text-[#111] text-xl font-semibold mb-5 w-5/6">
+              ChatGPT is an AI-powered chatbot platform that uses OpenAI's GPT
+              technology to simulate human conversation.
+            </p>
+            <div class="flex items-center justify-evenly mb-5">
+              <div
+                class="text-center text-base font-bold text-green-500 rounded-xl bg-white w-[100px] py-2"
+              >
+                $10/<br />mounth<br />Basic
+              </div>
+              <div
+                class="text-center text-base font-bold text-orange-500 rounded-xl bg-white w-[100px] py-2"
+              >
+                $50/<br />mounth<br />Pro
+              </div>
+              <div
+                class="text-center text-base font-bold text-red-500 rounded-xl bg-white w-[100px] py-2"
+              >
+                Contact<br />us<br />Enterprise
+              </div>
+            </div>
+            <div class="flex gap-10 mb-7">
+              <div class="">
+                <h1 class="text-[#111] text-xl font-semibold mb-2">Features</h1>
+                <ul class="ml-2">
+                  <li class="text-sm text-[#585858]">Customizable responses</li>
+                  <p class="text-sm text-[#585858]">Multilingual support</p>
+                  <p class="text-sm text-[#585858]">Seamless integration</p>
+                </ul>
+              </div>
+              <div class="">
+                <h1 class="text-[#111] text-xl font-semibold mb-2">
+                  Integrations
+                </h1>
+                <ul class="ml-2">
+                  <p class="text-sm text-[#585858]">FB Messenger</p>
+                  <p class="text-sm text-[#585858]">Slack</p>
+                  <p class="text-sm text-[#585858]">Telegram</p>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="border rounded-3xl">
+            <div class="flex flex-col items-center gap-2 mt-4 h-full">
+              <img
+                src="./images/image1.jpg"
+                class="w-[90%] h-[60%] rounded-3xl"
+                alt=""
+              />
+              <p class="text-[#111] text-xl font-semibold mt-5">
+                Hi, how are you doing today?
+              </p>
+              <p class="text-[#585858] text-base text-center w-[80%]">
+                I'm doing well, thank you for asking. How can I assist you
+                today?
+              </p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
     <h1 class="text-[#111] text-center text-4xl font-semibold my-7">
       AI Universe Hub
     </h1>
     <button
+      id="sortButton"
       class="btn bg-[#EA5757] hover:bg-[#EA5757] capitalize text-white mx-auto block"
     >
       Sort By Data
     </button>
     <!-- !Container -->
-    <div class="container mx-auto grid grid-cols-3 gap-5 mt-12">
-      <!-- !Card -->
-      <div class="text-[#828282] border rounded-lg p-5 pb-0">
-        <img class="rounded-lg" src="./images/image1.jpg" alt="" />
-        <h1 class="text-[#111] text-2xl font-semibold my-5">Features</h1>
-        <div class="border-b pb-5">
-          <p class="">1. Natural language processing</p>
-          <p class="">2. Contextual understanding</p>
-          <p class="">3. Text generation</p>
-        </div>
-        <div class="flex justify-between items-center py-5">
-          <div class="">
-            <h1 class="text-[#111] text-2xl font-semibold mb-1">Chat GPT</h1>
-            <div class="flex items-center gap-2">
-              <i class="fa-solid fa-calendar-days"></i>
-              <span class="text-xs">11/02/2020</span>
-            </div>
-          </div>
-          <i class="fa-solid fa-arrow-right-long text-[#EA5757]"></i>
-        </div>
-      </div>
-      <!-- !Card -->
-      <div class="text-[#828282] border rounded-lg p-5 pb-0">
-        <img class="rounded-lg" src="./images/image1.jpg" alt="" />
-        <h1 class="text-[#111] text-2xl font-semibold my-5">Features</h1>
-        <div class="border-b pb-5">
-          <p class="">1. Natural language processing</p>
-          <p class="">2. Contextual understanding</p>
-          <p class="">3. Text generation</p>
-        </div>
-        <div class="flex justify-between items-center py-5">
-          <div class="">
-            <h1 class="text-[#111] text-2xl font-semibold mb-1">Chat GPT</h1>
-            <div class="flex items-center gap-2">
-              <i class="fa-solid fa-calendar-days"></i>
-              <span class="text-xs">11/02/2020</span>
-            </div>
-          </div>
-          <i class="fa-solid fa-arrow-right-long text-[#EA5757]"></i>
-        </div>
-      </div>
-      <!-- !Card -->
-      <div class="text-[#828282] border rounded-lg p-5 pb-0">
-        <img class="rounded-lg" src="./images/image1.jpg" alt="" />
-        <h1 class="text-[#111] text-2xl font-semibold my-5">Features</h1>
-        <div class="border-b pb-5">
-          <p class="">1. Natural language processing</p>
-          <p class="">2. Contextual understanding</p>
-          <p class="">3. Text generation</p>
-        </div>
-        <div class="flex justify-between items-center py-5">
-          <div class="">
-            <h1 class="text-[#111] text-2xl font-semibold mb-1">Chat GPT</h1>
-            <div class="flex items-center gap-2">
-              <i class="fa-solid fa-calendar-days"></i>
-              <span class="text-xs">11/02/2020</span>
-            </div>
-          </div>
-          <i class="fa-solid fa-arrow-right-long text-[#EA5757]"></i>
-        </div>
-      </div>
-    </div>
+    <div
+      id="cardsContainer"
+      class="container mx-auto grid grid-cols-3 gap-5 mt-12"
+    ></div>
+    <span
+      id="loader"
+      class="hidden loading loading-ring text-error w-[200px] mx-auto block"
+    ></span>
     <button
+      id="showMore"
       class="btn bg-[#EA5757] hover:bg-[#EA5757] capitalize text-white mx-auto block my-10"
     >
       see more
